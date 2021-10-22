@@ -28,7 +28,7 @@ NC
 Text Notes 9350 2650 0    50   ~ 0
 NC
 Text Notes 9350 2750 0    50   ~ 0
-BS1: 3-wire SPI
+BS1: 4-wire SPI
 Text Notes 9350 2850 0    50   ~ 0
 BUSY
 Text Notes 9350 2950 0    50   ~ 0
@@ -534,17 +534,6 @@ Text Label 8700 3200 0    50   ~ 0
 SCK
 Text Label 8700 3300 0    50   ~ 0
 MOSI
-$Comp
-L power:+3V3 #PWR?
-U 1 1 617DC065
-P 8000 2700
-F 0 "#PWR?" H 8000 2550 50  0001 C CNN
-F 1 "+3V3" H 8015 2873 50  0000 C CNN
-F 2 "" H 8000 2700 50  0001 C CNN
-F 3 "" H 8000 2700 50  0001 C CNN
-	1    8000 2700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9000 2700 8000 2700
 Wire Wire Line
@@ -558,15 +547,17 @@ Text Label 8700 2900 0    50   ~ 0
 $Comp
 L power:GND #PWR?
 U 1 1 617E7179
-P 8000 3000
-F 0 "#PWR?" H 8000 2750 50  0001 C CNN
-F 1 "GND" H 8005 2827 50  0000 C CNN
-F 2 "" H 8000 3000 50  0001 C CNN
-F 3 "" H 8000 3000 50  0001 C CNN
-	1    8000 3000
+P 8000 2700
+F 0 "#PWR?" H 8000 2450 50  0001 C CNN
+F 1 "GND" H 8005 2527 50  0000 C CNN
+F 2 "" H 8000 2700 50  0001 C CNN
+F 3 "" H 8000 2700 50  0001 C CNN
+	1    8000 2700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8000 3000 9000 3000
+	8700 3000 9000 3000
 NoConn ~ 9000 3800
+Text Label 8700 3000 0    50   ~ 0
+D~C~
 $EndSCHEMATC
